@@ -21,20 +21,24 @@ public class Main {
         int opcao;
         do {
 
-            //Escolhendo a moeda base
+            while (tagetCode.equals(baseCode)){
 
-            System.out.println("Conveter de");
-            menu.mostraMenu();
-            opcao = entrada.nextInt();
+                System.out.println("Conveter de");
+                menu.mostraMenu();
+                opcao = entrada.nextInt();
 
-           //Escolhendo a moeda para conversão
+                //Escolhendo a moeda para conversão
 
-            baseCode = menu.menuEscolha(opcao);
-            System.out.println("Converte para:");
-            menu.mostraMenu();
-            opcao = entrada.nextInt();
+                baseCode = menu.menuEscolha(opcao);
+                System.out.println("Voce deseja converter "+baseCode+ " para:");
+                menu.mostraMenu();
+                opcao = entrada.nextInt();
+                tagetCode = menu.menuEscolha(opcao);
+                if(tagetCode.equals(baseCode)){
+                    System.out.println("Voce esta tentado converter mesma moerda de origem e de destino!");}
 
-            tagetCode = menu.menuEscolha(opcao);
+            }
+
             System.out.println("Digite o valor de desja conveter de "+baseCode+" para "+tagetCode+":");
             valorEntrada=entrada.nextDouble();
             Localizacao l = new Localizacao();
@@ -43,7 +47,7 @@ public class Main {
             String e =l.localizando(baseCode, valorEntrada );
             String s = l.localizando(tagetCode, valorConvertido);
 
-                    api.inciaApi();
+            api.inciaApi();
             System.out.println("o valor de "+ e +" convertido em é "+ s );
 
             System.out.println("Deseja fazer uma nova conversão?");

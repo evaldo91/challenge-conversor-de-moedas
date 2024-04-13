@@ -9,10 +9,15 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
 public class Api {
-    String baseCode;
-    String tagetCode;
-    Double valorEntrada;
-    Double valorSaida;
+    private String baseCode;
+    private String tagetCode;
+    private Double valorEntrada;
+    private Double valorSaida;
+    private String apiKey = "e802ce989a3bfb9d679b6d08"; // Entre com api aqui;
+
+
+
+
 
     public Api(String baseCode, String tagetCode, Double valorEntrada) {
         this.baseCode = baseCode;
@@ -24,7 +29,7 @@ public class Api {
     public double inciaApi() throws IOException, InterruptedException {
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
-                .uri(URI.create("https://v6.exchangerate-api.com/v6/e802ce989a3bfb9d679b6d08/pair/"+baseCode+"/"+tagetCode+"/"+valorEntrada))
+                .uri(URI.create("https://v6.exchangerate-api.com/v6/"+ apiKey +"/pair/"+baseCode+"/"+tagetCode+"/"+valorEntrada))
                 .build();
 
         HttpResponse<String> response = client

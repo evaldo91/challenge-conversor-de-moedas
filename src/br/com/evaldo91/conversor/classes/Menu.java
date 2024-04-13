@@ -39,7 +39,7 @@ public class Menu {
     }
     public void mostraMenu(){
         System.out.println("""
-                    1 - Real Brasileiro (9BRL)
+                    1 - Real Brasileiro (BRL)
                     2 - Dólar Americano (USD)
                     3 - Euro (EUR)
                     4 - Libra esterlina (GBP)
