@@ -1,7 +1,7 @@
 package br.com.evaldo91.conversor.classes;
 
 public class Menu {
-    public String menuEscolha(int opcao){
+    public static String menuEscolha(int opcao) {
         switch (opcao) {
             case 1:
                 return "BRL";
@@ -31,29 +31,27 @@ public class Menu {
                 return "CLP";
             case 14:
                 return "COP";
-            case 0:
-                return "Programa finalizado.";
             default:
-                return "Opção inválida. Por favor, selecione novamente.";
+                throw new IllegalArgumentException("Opção inválida! Por favor, selecione uma opção de 1 a 14.");
         }
     }
-    public void mostraMenu(){
-        System.out.println("""
-                    1 - Real Brasileiro (BRL)
-                    2 - Dólar Americano (USD)
-                    3 - Euro (EUR)
-                    4 - Libra esterlina (GBP)
-                    5 - Iene (JPY)
-                    6 - Dólar Australiano (AUD)
-                    7 - Franco Suíço (CHF)
-                    8 - Dólar Canadense (CAD)
-                    9 - Renminbi (Yuan) (CNY)
-                    10 - Peso Argentino (ARS)
-                    11 - Lira Turca (TRY)
-                    12 - Boliviano boliviano (BOB)
-                    13 - Peso chileno (CLP)
-                    14 - Peso colombiano (COP)
-                    """);
-    }
 
+    public void mostraMenu() {
+        System.out.println("""
+                1 - Real Brasileiro (BRL)
+                2 - Dólar Americano (USD)
+                3 - Euro (EUR)
+                4 - Libra esterlina (GBP)
+                5 - Iene (JPY)
+                6 - Dólar Australiano (AUD)
+                7 - Franco Suíço (CHF)
+                8 - Dólar Canadense (CAD)
+                9 - Renminbi (Yuan) (CNY)
+                10 - Peso Argentino (ARS)
+                11 - Lira Turca (TRY)
+                12 - Boliviano boliviano (BOB)
+                13 - Peso chileno (CLP)
+                14 - Peso colombiano (COP)
+                """);
+    }
 }

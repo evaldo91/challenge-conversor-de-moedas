@@ -1,62 +1,54 @@
 package br.com.evaldo91.conversor.main;
 
-import br.com.evaldo91.conversor.classes.Api;
-import br.com.evaldo91.conversor.classes.Localizacao;
 import br.com.evaldo91.conversor.classes.Menu;
 
 import java.io.IOException;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
+import static br.com.evaldo91.conversor.classes.Conversor.realizarConversao;
+
 public class Main {
-    public static void main(String[] args) throws IOException, InterruptedException {
+    public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
-        String baseCode = "";
-        String tagetCode = "";
-        double valorEntrada = 0;
-        Menu menu =new Menu();
-
-        System.out.println("Bem vindo selecione uma das opções ou 0 para sair:");
-
-
+        Menu menu = new Menu();
         int opcao;
+
+        System.out.println("Bem vindo! Selecione 1 para iniciar ou 0 para sair:");
+
         do {
-
-            while (tagetCode.equals(baseCode)){
-
-                System.out.println("Conveter de");
-                menu.mostraMenu();
+            try {
                 opcao = entrada.nextInt();
 
-                //Escolhendo a moeda para conversão
+                switch (opcao) {
+                    case 1:
+                        realizarConversao(entrada, menu);
 
-                baseCode = menu.menuEscolha(opcao);
-                System.out.println("Voce deseja converter "+baseCode+ " para:");
-                menu.mostraMenu();
-                opcao = entrada.nextInt();
-                tagetCode = menu.menuEscolha(opcao);
-                if(tagetCode.equals(baseCode)){
-                    System.out.println("Voce esta tentado converter mesma moerda de origem e de destino!");}
-
+                        System.out.println("0 - Sim  1 - Nao" );
+                        break;
+                    case 0:
+                        System.out.println("Programa finalizado");
+                        break;
+                    default:
+                        System.out.println("Opção inválida! Por favor, selecione uma opção válida.");
+                        System.out.println("Selecione 1 para reiniciar ou 0 para sair.");
+                        break;
+                }
+            } catch (InputMismatchException e) {
+                System.out.println("Entrada inválida! Por favor, insira um número inteiro. ");
+                entrada.next(); // Limpar o buffer do scanner
+                opcao = -1; // Definir opcao como -1 para continuar o loop
+            } catch (IOException | InterruptedException e) {
+                throw new RuntimeException(e);
             }
+        } while (opcao != 0); // Repetir até que o usuário selecione a opção de sair (0)
+        System.out.println("Teste");
 
-            System.out.println("Digite o valor de desja conveter de "+baseCode+" para "+tagetCode+":");
-            valorEntrada=entrada.nextDouble();
-            Localizacao l = new Localizacao();
-            Api api = new Api(baseCode, tagetCode, valorEntrada);
-            double valorConvertido = api.inciaApi();
-            String e =l.localizando(baseCode, valorEntrada );
-            String s = l.localizando(tagetCode, valorConvertido);
-
-            api.inciaApi();
-            System.out.println("o valor de "+ e +" convertido em é "+ s );
-
-            System.out.println("Deseja fazer uma nova conversão?");
-            System.out.println("1 - para sim 0 - para não");
-            opcao = entrada.nextInt();
-            if (opcao==0){
-                break;
-            }
-        } while (opcao != 0);
+        entrada.close();
     }
 
-}
+
+
+    }
+
+
