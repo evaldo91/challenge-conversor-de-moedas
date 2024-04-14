@@ -18,7 +18,7 @@ public class CodigoPais {
                     System.exit(0); // Encerra o programa imediatamente
                 } else if (opcao >= 1 && opcao <= 14) {
                     code = Menu.menuEscolha(opcao);
-                    System.out.println("Voce selecionou "+ Localizacao.localizando(code, 0).getNomeMoeda());
+                    System.out.println("Voce selecionou "+ Localizacao.localizando(code, 0).nomeMoeda());
                     return code;
                 } else {
                     System.out.println("Opção inválida! Por favor, selecione uma opção de 1 a 14 ou 0 para sair.");
