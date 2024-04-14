@@ -11,9 +11,8 @@ import static br.com.evaldo91.conversor.classes.Conversor.realizarConversao;
 public class Main {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
-        Menu menu = new Menu();
         int opcao;
-
+        Menu menu = new Menu();
         System.out.println("Bem vindo! Selecione 1 para iniciar ou 0 para sair:");
 
         do {
@@ -22,8 +21,8 @@ public class Main {
 
                 switch (opcao) {
                     case 1:
-                        realizarConversao(entrada, menu);
-
+                        realizarConversao(entrada,menu);
+                        System.out.println("Deseja encerra o programa?");
                         System.out.println("0 - Sim  1 - Nao" );
                         break;
                     case 0:
@@ -49,6 +48,5 @@ public class Main {
 
 
 
-    }
-
+}
 

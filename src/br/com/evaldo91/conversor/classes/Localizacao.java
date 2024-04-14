@@ -48,7 +48,7 @@ public class Localizacao {
             case "CAD":
                 lingua = "en";
                 pais = "CA";
-                moeda = "Dólar Canadens";
+                moeda = "Dólar Canadense";
                 break;
             case "CNY":
                 lingua = "sh";
