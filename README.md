@@ -1,7 +1,13 @@
-#   Conversor de Moeda - Challenge ONE - Java - Back end (Java 21)
+
+  
+Aqui está uma versão arrumada do seu README:
+
+# Conversor de Moeda - Desafio ONE - Java - Backend (Java 21)
+
 ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
 
-O Conversor de Moeda é um programa em Java que permite aos usuários converter entre diferentes moedas utilizando a API ExchangeRate-API. Este programa foi desenvolvido como parte do Challenge ONE da turma 6.
+
+O Conversor de Moeda é um programa em Java que permite aos usuários converter entre diferentes moedas utilizando a API ExchangeRate-API. Este programa foi desenvolvido como parte do Desafio ONE da turma 6.
 
 ## Funcionalidades
 
@@ -20,6 +26,12 @@ O Conversor de Moeda é um programa em Java que permite aos usuários converter 
     -   Boliviano Boliviano (BOB)
     -   Peso Chileno (CLP)
     -   Peso Colombiano (COP)
+
+## Funcionalidades Extra
+
+-   **Histórico de Conversões**: Adiciona a capacidade de rastrear e exibir o histórico das últimas conversões realizadas, oferecendo aos usuários uma visão completa de suas atividades.  ***(Desenvolvimento ainda não iniciado)***
+-   **Suporte para Mais Moedas**: Expande a lista de moedas disponíveis para escolha, permitindo que os usuários convertam entre uma variedade ainda maior de opções monetárias. ***(Em implementação 14/160)***
+-   **Registros de Logs**: Utiliza as funções da biblioteca java.time para criar registros que registrem as conversões realizadas, incluindo informações sobre quais moedas foram convertidas e em que momento. ***(Desenvolvimento ainda não iniciado)***
 
 ## Utilização
 
