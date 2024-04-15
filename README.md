@@ -1,5 +1,6 @@
 #   Conversor de Moeda - Challenge ONE - Java - Back end (Java 21)
 ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
+
 O Conversor de Moeda é um programa em Java que permite aos usuários converter entre diferentes moedas utilizando a API ExchangeRate-API. Este programa foi desenvolvido como parte do Challenge ONE da turma 6.
 
 ## Funcionalidades
