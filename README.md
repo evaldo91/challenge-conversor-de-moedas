@@ -52,4 +52,4 @@ Se desejar contribuir para o projeto, siga estas diretrizes:
 
 ## Licença
 
-Este projeto está licenciado sob a Licença MIT. Consulte o arquivo LICENSE.md para obter mais detalhes.
+Este projeto está licenciado sob a Licença MIT.
