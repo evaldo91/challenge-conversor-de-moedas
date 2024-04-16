@@ -4,6 +4,7 @@
     <root id="archive" name="challenge-conversor-de-moedas.jar">
       <element id="module-output" name="challenge-conversor-de-moedas" />
       <element id="extracted-dir" path="$USER_HOME$/Downloads/gson-2.10.1.jar" path-in-jar="/" />
+      <element id="library" level="project" name="gson-2.10.1" />
     </root>
   </artifact>
 </component>

@@ -12,8 +12,7 @@ public class Api {
 
 
     public static double inciaApi(String baseCode, String tagetCode, Double valorEntrada) throws IOException, InterruptedException {
-        double valorSaida;
-        String apiKey = "e802ce989a3bfb9d679b6d08"; // Entre com api aqui;
+      String apiKey = "e802ce989a3bfb9d679b6d08"; // Entre com api aqui;
 
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
@@ -25,7 +24,7 @@ public class Api {
 
         Gson gson = new Gson();
         ApiRec apiRec = gson.fromJson(response.body(), ApiRec.class);
-        return valorSaida= Double.valueOf(apiRec.conversion_result());
+        return Double.parseDouble(apiRec.conversion_result());
 
 
     }
