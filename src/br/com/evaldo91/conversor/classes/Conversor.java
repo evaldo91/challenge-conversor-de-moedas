@@ -1,7 +1,5 @@
 package br.com.evaldo91.conversor.classes;
 
-import br.com.evaldo91.conversor.classes.*;
-
 import java.io.IOException;
 import java.util.Scanner;
 
@@ -36,6 +34,11 @@ public class Conversor {
 
 
         // Obtenção do valor a ser convertido
+        try {
+            Api.lerApi();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
 
         ImprimirValores.imprimir(ObeterValor.valor(
                         "converter de " + nomeMoedaOrigem + " para " + nomeMoedaDestino + " (ou 0 para sair):", entrada),

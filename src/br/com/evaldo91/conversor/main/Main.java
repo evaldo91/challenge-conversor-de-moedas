@@ -11,6 +11,7 @@ import static br.com.evaldo91.conversor.classes.Conversor.realizarConversao;
 public class Main {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
+
         int opcao;
         Menu menu = new Menu();
         System.out.println("Bem vindo! Selecione 1 para iniciar ou 0 para sair:");
@@ -41,7 +42,7 @@ public class Main {
                 throw new RuntimeException(e);
             }
         } while (opcao != 0); // Repetir até que o usuário selecione a opção de sair (0)
-        System.out.println("Teste");
+        System.out.println("Obrigado por usa nosso programa");
 
         entrada.close();
     }

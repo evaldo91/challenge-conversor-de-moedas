@@ -1,7 +1,7 @@
-# Conversor de Moeda - Desafio ONE - Java - Backend (Java 21)
+﻿
+#   Conversor de Moeda - Desafio ONE - Java - Backend (Java 21)
 
 ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
-
 
 O Conversor de Moeda é um programa em Java que permite aos usuários converter entre diferentes moedas utilizando a API ExchangeRate-API. Este programa foi desenvolvido como parte do Desafio ONE da turma 6.
 
@@ -25,21 +25,38 @@ O Conversor de Moeda é um programa em Java que permite aos usuários converter 
 
 ## Funcionalidades Extra
 
--   **Histórico de Conversões**: Adiciona a capacidade de rastrear e exibir o histórico das últimas conversões realizadas, oferecendo aos usuários uma visão completa de suas atividades.  ***(Desenvolvimento ainda não iniciado)***
--   **Suporte para Mais Moedas**: Expande a lista de moedas disponíveis para escolha, permitindo que os usuários convertam entre uma variedade ainda maior de opções monetárias. ***(Em implementação 14/160)***
--   **Registros de Logs**: Utiliza as funções da biblioteca java.time para criar registros que registrem as conversões realizadas, incluindo informações sobre quais moedas foram convertidas e em que momento. ***(Desenvolvimento ainda não iniciado)***
+-   **Histórico de Conversões**: Adiciona a capacidade de rastrear e exibir o histórico das últimas conversões realizadas, oferecendo aos usuários uma visão completa de suas atividades. _**(Desenvolvimento ainda não iniciado)**_
+-   **Suporte para Mais Moedas**: Expande a lista de moedas disponíveis para escolha, permitindo que os usuários convertam entre uma variedade ainda maior de opções monetárias. _**(Em implementação 14/160)**_
+-   **Registros de Logs**: Utiliza as funções da biblioteca java.time para criar registros que registrem as conversões realizadas, incluindo informações sobre quais moedas foram convertidas e em que momento. _**(Desenvolvimento ainda não iniciado)**_
 
 ## Utilização
 
-Para utilizar o Conversor de Moeda, siga estas etapas:
+### Obtendo e configurando Apikey:
 
-1.  Baixe ou clone o repositório.
-2.  Abra o projeto em sua IDE Java preferida.
-3.  Certifique-se de que a API ExchangeRate-API está configurada corretamente no projeto.
-4.  Execute o programa.
-5.  Escolha a moeda de origem e a moeda de destino.
-6.  Insira o valor a ser convertido.
-7.  O programa fornecerá o valor convertido com base na taxa de câmbio atual.
+1.  Entre no site [ExchangeRate-API](https://www.exchangerate-api.com/).
+2.  Faça o cadastro e obtenha sua Apikey.
+3.  Copie a Apikey.
+
+### Executando o programa:
+
+#### Baixando ou clonando o repositório:
+
+1.  Baixe/clone o repositório do GitHub.
+2.  No caso de download, extraia o arquivo ZIP.
+3.  Cole a Apikey no arquivo `api.txt`:
+    -   Se baixou o ZIP compilado, cole a Apikey no arquivo `api.txt` que está na raiz do projeto.
+    -   Se clonou o repositório, cole a Apikey no arquivo `api.txt` que está no diretório `/src/br/com/evaldo91/conversor/`.
+4.  Abra um terminal (Mac e Linux) ou prompt de comando (Windows) na pasta onde está o arquivo `conversor.jar` ou na raiz do projeto (caso tenha clonado o repositório).
+5.  Execute o comando `java -jar conversor.jar`.
+
+#### Executando diretamente da IDE:
+
+1.  Abra o projeto em sua IDE Java preferida.
+2.  Cole a Apikey no arquivo `api.txt` conforme descrito anteriormente.
+3.  Execute o programa.
+4.  Escolha a moeda de origem e a moeda de destino.
+5.  Insira o valor a ser convertido.
+6.  O programa fornecerá o valor convertido com base na taxa de câmbio atual.
 
 ## Contribuição
 
