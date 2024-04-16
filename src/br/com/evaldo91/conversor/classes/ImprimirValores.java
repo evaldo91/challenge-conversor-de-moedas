@@ -9,9 +9,9 @@ public class ImprimirValores {
                 + Localizacao.localizando(baseCode, valorEntrada).valorFormatado()
                 +" (" + Localizacao.localizando(baseCode, 0).nomeMoeda() + ") convertido é "
                 + Localizacao.localizando(tagetCode,
-                Api.inciaApi(baseCode,
-                        tagetCode,
-                        valorEntrada)).
+                        Api.inciaApi(baseCode,
+                                tagetCode,
+                                valorEntrada)).
                 valorFormatado()
                 +" (" + Localizacao.localizando(tagetCode, 0).nomeMoeda() +")");
     }
