@@ -34,10 +34,10 @@ public class Conversor {
 
 
         // Obtenção do valor a ser convertido
-        try {
+       try {
             Api.lerApi();
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            throw new RuntimeException("A chave da API não foi definida corretamente. verifique api.txt ");
         }
 
         ImprimirValores.imprimir(ObeterValor.valor(

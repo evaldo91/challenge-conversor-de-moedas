@@ -26,7 +26,7 @@ public class Api {
     public static double inciaApi(String baseCode, String tagetCode, Double valorEntrada) throws IOException, InterruptedException {
 
         if (apiKey == null) {
-            throw new IllegalStateException("A chave da API não foi definida. Certifique-se de chamar readApiKeyFromFile() antes de inciaApi().");
+            throw new IllegalStateException("A chave da API não foi definida corretamente. verifique api.txt ");
         }
 
         HttpClient client = HttpClient.newHttpClient();

@@ -14,7 +14,8 @@ public class Main {
 
         int opcao;
         Menu menu = new Menu();
-        System.out.println("Bem vindo! Selecione 1 para iniciar ou 0 para sair:");
+        System.out.println("Bem vindo!");
+        System.out.println("Selecione 1 para iniciar ou 0 para sair:");
 
         do {
             try {
@@ -23,8 +24,8 @@ public class Main {
                 switch (opcao) {
                     case 1:
                         realizarConversao(entrada,menu);
-                        System.out.println("Deseja encerra o programa?");
-                        System.out.println("0 - Sim  1 - Nao" );
+                        System.out.println("Deseja fazer uma nova conversão?");
+                        System.out.println("1 - Sim  0 - Nao" );
                         break;
                     case 0:
                         System.out.println("Programa finalizado");
@@ -42,7 +43,7 @@ public class Main {
                 throw new RuntimeException(e);
             }
         } while (opcao != 0); // Repetir até que o usuário selecione a opção de sair (0)
-        System.out.println("Obrigado por usa nosso programa");
+        System.out.println("Obrigado por usar nosso programa");
 
         entrada.close();
     }
