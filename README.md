@@ -23,12 +23,6 @@ O Conversor de Moeda é um programa em Java que permite aos usuários converter 
     -   Peso Chileno (CLP)
     -   Peso Colombiano (COP)
 
-## Funcionalidades Extra
-
--   **Histórico de Conversões**: Adiciona a capacidade de rastrear e exibir o histórico das últimas conversões realizadas, oferecendo aos usuários uma visão completa de suas atividades. _**(Desenvolvimento ainda não iniciado)**_
--   ~~**Suporte para Mais Moedas**: Expande a lista de moedas disponíveis para escolha, permitindo que os usuários convertam entre uma variedade ainda maior de opções monetárias.~~
--   **Registros de Logs**: Utiliza as funções da biblioteca java.time para criar registros que registrem as conversões realizadas, incluindo informações sobre quais moedas foram convertidas e em que momento. _**(Desenvolvimento ainda não iniciado)**_
-
 ## Utilização
 
 ### Obtendo e configurando Apikey:
