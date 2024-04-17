@@ -39,20 +39,8 @@ O Conversor de Moeda é um programa em Java que permite aos usuários converter 
 
 ### Executando o programa:
 
-#### Baixando ou clonando o repositório:
-
-1.  Baixe/clone o repositório do GitHub.
-2.  No caso de download, extraia o arquivo ZIP.
-3.  Cole a Apikey no arquivo `api.txt`:
-    -   Se baixou o ZIP compilado, cole a Apikey no arquivo `api.txt` que está na raiz do projeto.
-    -   Se clonou o repositório, cole a Apikey no arquivo `api.txt` que está no diretório `/src/br/com/evaldo91/conversor/`.
-4.  Abra um terminal (Mac e Linux) ou prompt de comando (Windows) na pasta onde está o arquivo `conversor.jar` ou na raiz do projeto (caso tenha clonado o repositório).
-5.  Execute o comando `java -jar conversor.jar`.
-
-#### Executando diretamente da IDE:
-
 1.  Abra o projeto em sua IDE Java preferida.
-2.  Cole a Apikey no arquivo `api.txt` conforme descrito anteriormente.
+2.  Cole a Apikey  em api.java
 3.  Execute o programa.
 4.  Escolha a moeda de origem e a moeda de destino.
 5.  Insira o valor a ser convertido.

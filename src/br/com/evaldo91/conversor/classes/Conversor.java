@@ -4,6 +4,8 @@ import java.io.IOException;
 import java.util.Scanner;
 
 
+
+
 public class Conversor {
 
     public static void realizarConversao(Scanner entrada, Menu menu) throws IOException, InterruptedException {
@@ -34,11 +36,7 @@ public class Conversor {
 
 
         // Obtenção do valor a ser convertido
-       try {
-            Api.lerApi();
-        } catch (IOException e) {
-            throw new RuntimeException("A chave da API não foi definida corretamente. verifique api.txt ");
-        }
+
 
         ImprimirValores.imprimir(ObeterValor.valor(
                         "converter de " + nomeMoedaOrigem + " para " + nomeMoedaDestino + " (ou 0 para sair):", entrada),
